@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.para-container p {
+  margin: 2%;
+}
+.image1 {
+  background-image: url(../images/puppy-1.jpg);
+}
+.image2 {
+  background-image: url(../images/puppy-2.jpg);
+}
+.allImages {
+  height: 310px;
+  background-size: cover;
+  width: 308px;
+  margin: 2% auto;
+}
+.center {
+  background-color: blue;
+  text-align: center;
+  color: yellow;
+  padding: 1%;
+}
+
+/***************************
+      media query 1st 
+***************************/
+@media (min-width: 700px) {
+  .para-container {
+    display: flex;
+    width: 650px;
+    margin: 0 auto;
+  }
+  .p2 {
+    display: none;
+  }
+  .images {
+    display: flex;
+    width: 650px;
+    margin: 0 auto;
+  }
+  .image2 {
+    background-image: url(../images/cat.jpg);
+  }
+}
+/***************************
+      media query 2nd
+***************************/
+@media (min-width: 1000px) {
+  .p2 {
+    display: block;
+  }
+  .para-container p {
+    background-color: green;
+    color: white;
+  }
+  .para-container {
+    width: 950px;
+  }
+  .images {
+    width: 950px;
+  }
+}
